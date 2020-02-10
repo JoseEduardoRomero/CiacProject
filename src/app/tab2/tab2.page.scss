@@ -1,5 +1,5 @@
 .welcome-card {
- 
+ margin-top: 50px;
     text-align: center;
   }
 .header{
@@ -32,13 +32,11 @@
         width: 150px;
         --background-activated: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
         --background-hover: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-      
       }
-    
-    
+
       .circulo {
-        width: 12rem;
-        height: 12rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 50%;
         background: white;
         display: flex;
@@ -55,7 +53,7 @@
     .circulo > h2 {
         font-family: sans-serif;
         color: black;
-        font-size: 2rem;
+        font-size: 3rem;
       
     }
     
