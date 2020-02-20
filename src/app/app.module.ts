@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+import {NgxEchartsModule} from 'ngx-echarts';
+
 @NgModule({
   declarations: [AppComponent,LoginComponent,RegisterComponent],
   entryComponents: [],

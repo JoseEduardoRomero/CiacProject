@@ -5,25 +5,19 @@
 </ion-toolbar>
 
 <ion-content>
-  <ion-card class="welcome-card">
-   
-    <ion-card-header>
-      
-      <ion-card-title>LEVEL WATER</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
 
-      <div class="circulo">
-        <h2>35% </h2>
+    <div class="circle">
+      <div class="wave">
+        <h2 class="porcentaje">56%</h2>
       </div>
-   
-     
-      
-     <ion-button class="btn-logueo" (click)="presentAlertConfirm()">Activar</ion-button>
-      
+    </div>
 
-    </ion-card-content>
-  </ion-card>
-
+    
+ 
+  
+  <div class="grafico">
+    <canvas #barChart></canvas>
+  </div>
+  
 
 </ion-content>

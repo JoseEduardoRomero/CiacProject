@@ -1,5 +1,7 @@
 {
   "name": "CiacProjectTabs",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
