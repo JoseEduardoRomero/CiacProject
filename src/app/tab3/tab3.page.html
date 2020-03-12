@@ -9,7 +9,7 @@
 <div class="avatar">
   <ion-avatar>
     <img *ngIf="user.picture != null" [src]="(user.picture)">
-    <img *ngIf="user.picture == null" [src]="https://picsum.photos/400/600">
+    <img *ngIf="user.picture == null" src="https://picsum.photos/400/600">
   </ion-avatar>
 </div>
 <ion-title size="medium">{{user.name}}</ion-title>
@@ -27,6 +27,8 @@
   <ion-icon name="log-out" class="salir-icon" (click)="doFbLogOut()"></ion-icon>
 </div>
 
-
+<div>
+  pito
+</div>
 
 </ion-content>
