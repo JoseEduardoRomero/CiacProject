@@ -26,18 +26,22 @@ ion-content{
     --background-activated: linear-gradient(0deg, rgba(240,152,25,1) 0%, rgba(255,88,88,1) 100%);
     --background-hover: linear-gradient(0deg, rgba(240,152,25,1) 0%, rgba(255,88,88,1) 100%);
     
+
 }
-.card-loggin{
+.card-loggin
+{
     padding: 20px;
 }
-.newUser{
+.newUser
+{
     text-decoration: none;
     color: black;
 }
 ion-item{
     --highlight-color-focused: linear-gradient(0deg, rgba(240,152,25,1) 0%, rgba(255,88,88,1) 100%);;
 }
+
 .face{
     font-size: 40px;
-    color: #3b5998 ;
+    color: #3b5998;
 }

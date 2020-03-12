@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { AlertController, LoadingController } from '@ionic/angular';
+import { NativeStorage } from '@ionic-native/native-storage/ngx';
+import { Router } from '@angular/router';
+import { Facebook } from '@ionic-native/facebook/ngx';
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
@@ -7,42 +10,37 @@ import { AlertController } from '@ionic/angular';
 })
 export class Tab3Page {
 
-  constructor(public alertController: AlertController) {}
-  async presentAlertPrompt() {
-    const alert = await this.alertController.create({
-      header: 'Edit Names',
-      inputs: [
-        {
-          name: 'name1',
-          type: 'text',
-          placeholder: 'Name Bomba'
-        },
-        {
-          name: 'name1',
-          type: 'text',
-          placeholder: 'Name Termostato'
-        },
-       
-        
-      ],
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Confirm Cancel');
-          }
-        }, {
-          text: 'Ok',
-          handler: () => {
-            console.log('Confirm Ok');
-          }
-        }
-      ]
-    });
+  user: any;
+  userReady: boolean = false;
+  constructor(private nativeStorage: NativeStorage, public loadingController: LoadingController,
+              private router: Router, private fb: Facebook) { }
 
-    await alert.present();
+  async ngOnInit() {
+    const loading = await this.loadingController.create({
+      message: 'Please wait...'
+    });
+    await loading.present();
+    this.nativeStorage.getItem('facebook_user')
+      .then(data => {
+        this.user = {
+          name: data.name,
+          email: data.email,
+          picture: data.picture
+        };
+        loading.dismiss();
+        this.userReady = true;
+      }, error => {
+        console.log(error);
+        loading.dismiss();
+      });
   }
 
+  doFbLogOut() {
+    this.fb.logout().then(res => {
+      this.nativeStorage.remove('facebook_user');
+      this.router.navigate(['./login']);
+    }, error => {
+      console.log(error);
+    });
+  }
 }

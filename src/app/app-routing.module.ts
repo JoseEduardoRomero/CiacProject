@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'login', pathMatch: 'full' },
-  {path: 'login',component: LoginComponent},
-  {path: 'register',component: RegisterComponent},
-  {path: 'tabs',loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)}
- 
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'tabs', loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule) }
+
 ];
 @NgModule({
   imports: [
@@ -16,4 +16,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
