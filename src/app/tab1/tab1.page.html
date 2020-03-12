@@ -1,34 +1,59 @@
 
   <ion-toolbar class="header" >
     
-      <p class="title">TEMPERATURE</p>
+      <p class="title">NIVEL DE AGUA</p>
  
   </ion-toolbar>
 
 
-<ion-content no-border>
-    <ion-card class="welcome-card">
+<ion-content >
+  <p class="title2">
    
-      <ion-card-header>
-        <div>
-          <p>Temperature <br><span class="grades">
-            16°
-          </span></p>
-        
-        </div>
-      
-          <ion-range color="danger" pin="true"  min="5" max="30"></ion-range>
-     
-      </ion-card-header>
-      <ion-card-content>
-   
-        
- 
-        
-       <ion-button class="btn-logueo" (click)="presentAlertConfirm()">Activar</ion-button>
-        
- 
-      </ion-card-content>
-    </ion-card>
+    <span>
+      Tinaco
+    </span>
     
+  </p>
+  
+  <div class="circle">
+    <div class="wave">
+      <h2 class="porcentaje">56%</h2>
+    </div>
+  </div>
+
+ <div class="porcentaje-water">
+  <canvas #barChart></canvas>
+ </div>
+  
+
+  <div class="circle">
+    <div class="wave">
+      <h2 class="porcentaje">56%</h2>
+    </div>
+  </div>
+  
+  <p class="title2">
+   
+    <span>
+      Cisterna
+    </span>
+    
+  </p>
+    
+    <div class="circle2">
+      <div class="wave2">
+        <h2 class="porcentaje2">96%</h2>
+      </div>
+    </div>
+    <div class="porcentaje-water">
+      <canvas #barChart2></canvas>
+     </div>
+
+  
+
+    
+ 
+    
+
+ 
 </ion-content>
