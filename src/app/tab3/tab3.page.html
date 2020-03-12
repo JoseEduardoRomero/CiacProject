@@ -8,11 +8,18 @@
 <ion-content>
 <div class="avatar">
   <ion-avatar>
+<<<<<<< HEAD
+    <img src="https://picsum.photos/400/600">
+  </ion-avatar>
+</div>
+<ion-title size="medium">Nombre de usuario</ion-title>
+=======
     <img *ngIf="user.picture != null" [src]="(user.picture)">
     <img *ngIf="user.picture == null" src="https://picsum.photos/400/600">
   </ion-avatar>
 </div>
 <ion-title size="medium">{{user.name}}</ion-title>
+>>>>>>> ebaf4bb51223b2dc436294b311037704eb38f2ad
 <ion-title  class="contact-us" size="medium">Contáctanos</ion-title>
 <div class="iconos">
   <ion-icon name="call" class="call"></ion-icon>   
@@ -24,7 +31,11 @@
   Soporte Técnico
 </div> 
 <div class="salir">
+<<<<<<< HEAD
+  <ion-icon name="log-out" class="salir-icon"></ion-icon>
+=======
   <ion-icon name="log-out" class="salir-icon" (click)="doFbLogOut()"></ion-icon>
+>>>>>>> ebaf4bb51223b2dc436294b311037704eb38f2ad
 </div>
 
 <div>

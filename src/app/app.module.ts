@@ -16,6 +16,8 @@ import { Facebook } from '@ionic-native/facebook/ngx';
 
 import {NgxEchartsModule} from 'ngx-echarts';
 
+import {NgxEchartsModule} from 'ngx-echarts';
+
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
   entryComponents: [],
