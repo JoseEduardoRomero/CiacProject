@@ -11,6 +11,9 @@ import { Facebook } from '@ionic-native/facebook/ngx';
 export class Tab3Page {
 
   user: any;
+  name: any;
+  email: any;
+  picture: any;
   userReady: boolean = false;
   constructor(private nativeStorage: NativeStorage, public loadingController: LoadingController,
               private router: Router, private fb: Facebook) { }
@@ -22,11 +25,10 @@ export class Tab3Page {
     await loading.present();
     this.nativeStorage.getItem('facebook_user')
       .then(data => {
-        this.user = {
-          name: data.name,
-          email: data.email,
-          picture: data.picture
-        };
+        this.user = data.name,
+          this.email = data.email,
+          this.picture = data.picture
+        ;
         loading.dismiss();
         this.userReady = true;
       }, error => {

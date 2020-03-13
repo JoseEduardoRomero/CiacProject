@@ -7,6 +7,7 @@ import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { SpinnerComponent } from '../tab1/spinner/spinner.component';
 
 @NgModule({
   imports: [
@@ -15,8 +16,6 @@ import { NgxEchartsModule } from 'ngx-echarts';
     FormsModule,
     NgxEchartsModule,
     TabsPageRoutingModule
-    
-    
   ],
   declarations: [TabsPage]
 })

@@ -13,16 +13,21 @@ import { RegisterComponent } from './auth/register/register.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { Facebook } from '@ionic-native/facebook/ngx';
-
 import {NgxEchartsModule} from 'ngx-echarts';
-
-import {NgxEchartsModule} from 'ngx-echarts';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { SpinnerComponent } from './tab1/spinner/spinner.component';
+import { timer } from 'rxjs';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule, AngularFireDatabaseModule, AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebase)
+  ],
   providers: [
     StatusBar,
     SplashScreen,

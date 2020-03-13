@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { Router } from '@angular/router';
+import { timer} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,8 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+
+  showSplash = true;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -24,6 +27,8 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
+
+      timer(3000).subscribe(() => this.showSplash = false);
       this.statusBar.backgroundColorByHexString('#ffffff');
       this.splashScreen.hide();
       this.nativeStorage.getItem('facebook_user').then(() => {

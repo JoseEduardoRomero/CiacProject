@@ -66,7 +66,7 @@ export class AuthService {
     try {
       await this.afAuth.auth.signInWithEmailAndPassword(email, password);
       this.isLoggedIn = true;
-      this.router.navigate(['./home']);
+      this.router.navigate(['./tabs/tab1']);
     } catch (e) {
       alert(e.message);
     }
@@ -77,7 +77,7 @@ export class AuthService {
     try {
       await this.afAuth.auth.createUserWithEmailAndPassword(email, password);
       this.isLoggedIn = true;
-      this.router.navigate(['./home']);
+      this.router.navigate(['./tabs/tab1']);
     } catch (e) {
       alert(e.message);
     }

@@ -1,525 +1,366 @@
-<<<<<<< HEAD
 .welcome-card {
   margin-top: 100px;
-   text-align: center;
- }
- .header{
-  
-   --background: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-   color: white;
-   border-radius: 0 0 90px 0;
-   height: 120px;
- }
- .btn-logueo{
- 
-   --background: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-   height: 30px;
-   width: 150px;
-   --background-activated: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-   --background-hover: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
- 
- }
- .title{
-   font-size: 40px;
- margin-top: 60px;
- margin-left: 20px; 
-  
- }
- 
- 
- 
- 
- [data-theme="dark"] {
-   --font-color: #fff;
-   --bg-color: #fff;
-   --button-bg-color: #ffffff;
-   --button-shadow:
-     -2px -2px 4px rgba(255, 255, 255, 0.05),
-     0 0 10px 10px rgba(255, 255, 255, 0.005),
-     2px 2px 8px rgba(60, 60, 60, 0.1);
- }
- 
- 
- 
- *,
- *:before,
- *:after {
-   box-sizing: inherit;
- }
- 
- .button {
-   color: var(--font-color);
-   position: relative;
-   border-radius: 15px;
-   background: var(--button-bg-color);
-   font-weight: 700;
-   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   box-shadow: var(--button-shadow);
-   cursor: pointer;
-   
-   &.button-link {
-     color: #067CF8;
-     display: block;
-     font-size: 17px;
-     margin: 30px 0 0;
-     padding: 20px 0;
-     width: 100%;
-   }
-   
-   &.button-small {
-     color: #6D6E74;
-     font-size: 22px;
-     line-height: 40px;
-     width: 40px;
-     height: 40px;
-   }
-   
-   &.button-large {
-     display: flex;
-     font-size: 20px;
-     flex-direction: column;
-     padding: 15px;
-     text-align: left;
-     width: 45%;
-     
-     & svg {
-       margin-bottom: 40px;
-       width: 30px;
-     }
-   }
- }
-   
- .button-dial {
-   border-radius: 50%;
-   display: flex;
-   height: 300px;
-   margin: 35px auto;
-   align-items: center;
-   justify-content: center;
-   width: 300px;
-   background: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
- 
- .button-dial-top {
-   background: var(--button-bg-color);
-   box-shadow: var(--button-shadow);
-   border-radius: 50%;
-   width: 70%;
-   height: 70%;
-   margin: 0 auto;
-   position: absolute;
-   top: 15%;
-   left: 15%;
-   text-align: center;
-   z-index: 5;
- }
- 
- .button-dial-label {
-   color: rgba(240,152,25,1);
-   font-size: 28px;
-   fill: rgba(240,152,25,1);
-   position: relative;
-   z-index: 10;
- }
- 
- .button-dial-spoke {
-   background-color: #fff;
-   display: block;
-   height: 2px;
-   width: 83%;
-   position: absolute;
-   margin: 0 auto;
-   z-index: 5;
-   top: 50%;
-   
-   &:nth-child(2) {
-     transform: rotate(30deg);
-   }
-   &:nth-child(3) {
-     transform: rotate(60deg);
-   }
-   &:nth-child(4) {
-     transform: rotate(90deg);
-   }
-   &:nth-child(5) {
-     transform: rotate(120deg);
-   }
-   &:nth-child(6) {
-     transform: rotate(150deg);
-   }
- }
- 
- .button-block {
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
-   padding: 15px 24px;
-   width: 100%;
-   
-   span {
-     font-size: 40px;
-   }
- }
- 
- .subtle {
-   color: #6D6E74;
- }
- //-----------------------------------------------------
-<<<<<<< HEAD
-
-
- .button2 {
-   color: var(--font-color);
-   position: relative;
-   border-radius: 15px;
-   background: var(--button-bg-color);
-   font-weight: 700;
-   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   box-shadow: var(--button-shadow);
-   cursor: pointer;
-   
-   &.button-link2 {
-     color: #067CF8;
-     display: block;
-     font-size: 17px;
-     margin: 30px 0 0;
-     padding: 20px 0;
-     width: 100%;
-   }
-   
-   &.button-small2 {
-     color: #6D6E74;
-     font-size: 22px;
-     line-height: 40px;
-     width: 40px;
-     height: 40px;
-   }
-   
-   &.button-large2 {
-     display: flex;
-     font-size: 20px;
-     flex-direction: column;
-     padding: 15px;
-     text-align: left;
-     width: 45%;
-     
-     & svg {
-       margin-bottom: 40px;
-       width: 30px;
-     }
-   }
- }
-   
- .button-dial2 {
-   border-radius: 50%;
-   display: flex;
-   height: 300px;
-   margin: 35px auto;
-   align-items: center;
-   justify-content: center;
-   width: 300px;
-   background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
- 
- .button-dial-top2 {
-   background: var(--button-bg-color);
-   box-shadow: var(--button-shadow);
-   border-radius: 50%;
-   width: 70%;
-   height: 70%;
-   margin: 0 auto;
-   position: absolute;
-   top: 15%;
-   left: 15%;
-   text-align: center;
-   z-index: 5;
- }
- 
- .button-dial-label2 {
-   color:  #21D4FD;
-   font-size: 28px;
-   fill: #B721FF;
-   position: relative;
-   z-index: 10;
- }
- 
- .button-dial-spoke2 {
-   background-color: #fff;
-   display: block;
-   height: 2px;
-   width: 83%;
-   position: absolute;
-   margin: 0 auto;
-   z-index: 5;
-   top: 50%;
-   
-   &:nth-child(2) {
-     transform: rotate(30deg);
-   }
-   &:nth-child(3) {
-     transform: rotate(60deg);
-   }
-   &:nth-child(4) {
-     transform: rotate(90deg);
-   }
-   &:nth-child(5) {
-     transform: rotate(120deg);
-   }
-   &:nth-child(6) {
-     transform: rotate(150deg);
-   }
- }
- 
- .button-block2 {
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
-   padding: 15px 24px;
-   width: 100%;
-   
-   span {
-     font-size: 40px;
-   }
- }
- 
- .subtle2 {
-   color: #6D6E74;
- }
- 
- 
- 
-=======
-
-
- .button2 {
-   color: var(--font-color);
-   position: relative;
-   border-radius: 15px;
-   background: var(--button-bg-color);
-   font-weight: 700;
-   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   box-shadow: var(--button-shadow);
-   cursor: pointer;
-   
-   &.button-link2 {
-     color: #067CF8;
-     display: block;
-     font-size: 17px;
-     margin: 30px 0 0;
-     padding: 20px 0;
-     width: 100%;
-   }
-   
-   &.button-small2 {
-     color: #6D6E74;
-     font-size: 22px;
-     line-height: 40px;
-     width: 40px;
-     height: 40px;
-   }
-   
-   &.button-large2 {
-     display: flex;
-     font-size: 20px;
-     flex-direction: column;
-     padding: 15px;
-     text-align: left;
-     width: 45%;
-     
-     & svg {
-       margin-bottom: 40px;
-       width: 30px;
-     }
-   }
- }
-   
- .button-dial2 {
-   border-radius: 50%;
-   display: flex;
-   height: 300px;
-   margin: 35px auto;
-   align-items: center;
-   justify-content: center;
-   width: 300px;
-   background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
- 
- .button-dial-top2 {
-   background: var(--button-bg-color);
-   box-shadow: var(--button-shadow);
-   border-radius: 50%;
-   width: 70%;
-   height: 70%;
-   margin: 0 auto;
-   position: absolute;
-   top: 15%;
-   left: 15%;
-   text-align: center;
-   z-index: 5;
- }
- 
- .button-dial-label2 {
-   color:  #21D4FD;
-   font-size: 28px;
-   fill: #B721FF;
-   position: relative;
-   z-index: 10;
- }
- 
- .button-dial-spoke2 {
-   background-color: #fff;
-   display: block;
-   height: 2px;
-   width: 83%;
-   position: absolute;
-   margin: 0 auto;
-   z-index: 5;
-   top: 50%;
-   
-   &:nth-child(2) {
-     transform: rotate(30deg);
-   }
-   &:nth-child(3) {
-     transform: rotate(60deg);
-   }
-   &:nth-child(4) {
-     transform: rotate(90deg);
-   }
-   &:nth-child(5) {
-     transform: rotate(120deg);
-   }
-   &:nth-child(6) {
-     transform: rotate(150deg);
-   }
- }
- 
- .button-block2 {
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
-   padding: 15px 24px;
-   width: 100%;
-   
-   span {
-     font-size: 40px;
-   }
- }
- 
- .subtle2 {
-   color: #6D6E74;
- }
- 
- 
- 
-=======
-.welcome-
-{
- margin-top: 100px;
-    text-align: center;
+  text-align: center;
 }
-.header
-{
-   --background: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
+.header {
+  --background: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
   color: white;
   border-radius: 0 0 90px 0;
   height: 120px;
-  }
-  .title{
- font-size: 40px;
-margin-top: 60px;
-margin-left: 20px;  
-   
-  }
-  .redondeado {
-      background: white;
-     border-radius: 50%; 
-     height: 150px; 
-     width: 150px;
-     border: solid 3px black;
-     border-color:  rgba(255,90,88,1);
-     overflow:hidden;
-    }
-    .btn-logueo{
-        margin-top: 20px;
-        --background: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-        height: 30px;
-        width: 150px;
-        --background-activated: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-        --background-hover: linear-gradient(137deg, rgba(255,90,88,1) 0%, rgba(240,152,25,1) 100%);
-      }
+}
+.btn-logueo {
+  --background: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+  height: 30px;
+  width: 150px;
+  --background-activated: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+  --background-hover: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+}
+.title {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
 
-   
-   
-    
-  
-    
-    
-    .circle
-    {
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      width: 300px;
-      height: 300px;
-      background: #ccc;
-      border: 5px solid #cccccc;
-      box-shadow: 0 0 0 5px transparent;
-      border-radius: 50%;
-      overflow: hidden;
+[data-theme="dark"] {
+  --font-color: #fff;
+  --bg-color: #fff;
+  --button-bg-color: #ffffff;
+  --button-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05), 0 0 10px 10px rgba(255, 255, 255, 0.005),
+    2px 2px 8px rgba(60, 60, 60, 0.1);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.button {
+  color: var(--font-color);
+  position: relative;
+  border-radius: 15px;
+  background: var(--button-bg-color);
+  font-weight: 700;
+  transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+
+  &.button-link {
+    color: #067cf8;
+    display: block;
+    font-size: 17px;
+    margin: 30px 0 0;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  &.button-small {
+    color: #6d6e74;
+    font-size: 22px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &.button-large {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+    width: 45%;
+
+    & svg {
+      margin-bottom: 40px;
+      width: 30px;
     }
-    .wave
-    {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      background: #4973ff;
-      border-radius: 50%;
-      box-shadow: inset 0 0 50px rgba(0,0,0,.5) ;
+  }
+}
+
+.button-dial {
+  border-radius: 50%;
+  display: flex;
+  height: 300px;
+  margin: 35px auto;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  background: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-dial-top {
+  background: var(--button-bg-color);
+  box-shadow: var(--button-shadow);
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  text-align: center;
+  z-index: 5;
+}
+
+.button-dial-label {
+  color: rgba(240, 152, 25, 1);
+  font-size: 28px;
+  fill: rgba(240, 152, 25, 1);
+  position: relative;
+  z-index: 10;
+}
+
+.button-dial-spoke {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  width: 83%;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 5;
+  top: 50%;
+
+  &:nth-child(2) {
+    transform: rotate(30deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(60deg);
+  }
+  &:nth-child(4) {
+    transform: rotate(90deg);
+  }
+  &:nth-child(5) {
+    transform: rotate(120deg);
+  }
+  &:nth-child(6) {
+    transform: rotate(150deg);
+  }
+}
+
+.button-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 24px;
+  width: 100%;
+
+  span {
+    font-size: 40px;
+  }
+}
+
+.subtle {
+  color: #6d6e74;
+}
+//-----------------------------------------------------
+
+.button2 {
+  color: var(--font-color);
+  position: relative;
+  border-radius: 15px;
+  background: var(--button-bg-color);
+  font-weight: 700;
+  transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+
+  &.button-link2 {
+    color: #067cf8;
+    display: block;
+    font-size: 17px;
+    margin: 30px 0 0;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  &.button-small2 {
+    color: #6d6e74;
+    font-size: 22px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &.button-large2 {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+    width: 45%;
+
+    & svg {
+      margin-bottom: 40px;
+      width: 30px;
     }
-    
-    .wave:before,
-    .wave:after
-    {
-      content: '';
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%,-75%);
-      background: #000;
-    }
-    .wave:before{
-      border-radius: 45%;
-      background: rgba(255,255,255,1);
-      animation: animate 5s linear infinite;
-    }
-    .wave:after{
-      border-radius: 40%;
-      background: rgba(255,255,255,.5);
-      animation: animate 10s linear infinite;
-    }
-    @keyframes animate
-    {
-      0%
-      {
-        transform: translate(-50%,-75%) rotate(0deg);
-      }
-      100%
-      {
-        transform: translate(-50%,-75%) rotate(360deg);
-      }
-    }
-    .level-water{
-      text-align: center;
-    }
-   
-    .grafico{
-     margin-top: 350px;
-    }
->>>>>>> cc2072bdabbdd3a0c39b28d5143d59b699b15af6
->>>>>>> ebaf4bb51223b2dc436294b311037704eb38f2ad
+  }
+}
+
+.button-dial2 {
+  border-radius: 50%;
+  display: flex;
+  height: 300px;
+  margin: 35px auto;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-dial-top2 {
+  background: var(--button-bg-color);
+  box-shadow: var(--button-shadow);
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  text-align: center;
+  z-index: 5;
+}
+
+.button-dial-label2 {
+  color: #21d4fd;
+  font-size: 28px;
+  fill: #b721ff;
+  position: relative;
+  z-index: 10;
+}
+
+.button-dial-spoke2 {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  width: 83%;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 5;
+  top: 50%;
+
+  &:nth-child(2) {
+    transform: rotate(30deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(60deg);
+  }
+  &:nth-child(4) {
+    transform: rotate(90deg);
+  }
+  &:nth-child(5) {
+    transform: rotate(120deg);
+  }
+  &:nth-child(6) {
+    transform: rotate(150deg);
+  }
+}
+
+.button-block2 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 24px;
+  width: 100%;
+
+  span {
+    font-size: 40px;
+  }
+}
+
+.subtle2 {
+  color: #6d6e74;
+}
+.welcome- {
+  margin-top: 100px;
+  text-align: center;
+}
+.header {
+  --background: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+  color: white;
+  border-radius: 0 0 90px 0;
+  height: 120px;
+}
+.title {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.redondeado {
+  background: white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: solid 3px black;
+  border-color: rgba(255, 90, 88, 1);
+  overflow: hidden;
+}
+.btn-logueo {
+  margin-top: 20px;
+  --background: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+  height: 30px;
+  width: 150px;
+  --background-activated: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+  --background-hover: linear-gradient(137deg, rgba(255, 90, 88, 1) 0%, rgba(240, 152, 25, 1) 100%);
+}
+
+.circle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: #ccc;
+  border: 5px solid #cccccc;
+  box-shadow: 0 0 0 5px transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wave {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #4973ff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.wave:before,
+.wave:after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+.wave:before {
+  border-radius: 45%;
+  background: rgba(255, 255, 255, 1);
+  animation: animate 5s linear infinite;
+}
+.wave:after {
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+.level-water {
+  text-align: center;
+}
+
+.grafico {
+  margin-top: 350px;
+}
