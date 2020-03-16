@@ -1,40 +1,50 @@
-<app-spinner></app-spinner>
 <ion-toolbar class="header">
 
   <p class="title">NIVEL DE AGUA</p>
 
 </ion-toolbar>
-
-
-<ion-content>
+<div *ngIf="bomba != null ; then thenBlock else elseBlock">
   
-<div class="tinaco">
-  <span>TINACO</span>
 </div>
-
-  <div class="circle">
-    <div class="wave">
-      <h2 class="porcentaje">{{tinaco}}%</h2>
-    </div>
-  </div>
-  <div class="buttons">
-    <div *ngIf="bomba === 'on'">
-      <ion-button class="bomba" expand="full" (click)="apagarBomba()">Apagar Bomba</ion-button>
-    </div>
-    <div *ngIf="bomba === 'off'">
-      <ion-button class="bomba" expand="full" (click)="encenderBomba()">Encender Bomba</ion-button>
-    </div>
-  </div>
-  
-
-<div class="cisterna">
-  <span>CISTERNA</span>
-</div>
+<ng-template #thenBlock>
  
-
-  <div class="circle2">
-    <div class="wave2">
-      <h2 class="porcentaje2">{{cisterna}}%</h2>
-    </div>
+  
+  
+  <ion-content>
+    
+  <div class="tinaco">
+    <span>TINACO</span>
   </div>
-</ion-content>
+  
+    <div class="circle">
+      <div class="wave">
+        <h2 class="porcentaje">{{tinaco}}%</h2>
+      </div>
+    </div>
+    <div class="buttons">
+      <div *ngIf="bomba === 'on'" >
+        <ion-button class="btn-bomba" expand="full" (click)="apagarBomba()">Apagar Bomba</ion-button>
+      </div>
+      <div *ngIf="bomba === 'off'">
+        <ion-button class="btn-bomba" expand="full" (click)="encenderBomba()">Encender Bomba</ion-button>
+      </div>
+    </div>
+    
+  
+  <div class="cisterna">
+    <span>CISTERNA</span>
+  </div>
+   
+  
+    <div class="circle2">
+      <div class="wave2">
+        <h2 class="porcentaje2">{{cisterna}}%</h2>
+      </div>
+    </div>
+  </ion-content>
+</ng-template>
+<ng-template #elseBlock>
+  <div class="row" >
+        <app-spinner></app-spinner>
+  </div>
+</ng-template>
